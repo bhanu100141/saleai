@@ -1,38 +1,290 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main-container{
+  background: black;
+  padding: 10px;
+  background-size: cover;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+.nav-name{
+  color: white;
+  font-size: 20px;
+}
+.nav-icons {
+  color: white;
+  cursor: pointer;
+}
+.icons{
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+.nav-items{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.nav-items p{
+  margin: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.All-Bags{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 20px 10px 20px 10px;
+}
+.bag-icon{
+  width: 5vw;
+  height: 10vh;
+  color: white;
+}
+.bag-icon:hover{
+  cursor: pointer;
+}
+.bags{
+  color: white;
+  cursor: pointer;
+}
+.All-Bags div h6{
+  margin-left: 18px;
+  
+}
+.backpacks{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-size: 12px;
+}
+.p-icons{
+ margin-left: 10px;
+ width: 25px;
+ height: 25px;
+ cursor: pointer;
+}
+.bag-conatiner{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns with equal width */
+  gap: 20px; /* Gap between grid items */
+  background-color: black;
+}
+img{
+  width: 12vw;
+  height: 38vh;
+  margin: 3px;
+  margin: 10px;
+}
+.card{
+  text-align: center;
+  padding: 30px;
+}
+.item{
+  background-color: white;
+  border-radius: 17px;
+  color: white;
+  cursor: pointer;
+}
+.item:hover{
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+.cart-icon{
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+}
+.cart-icon:hover{
+  height: 35px;
+  width: 75px;
+  cursor: pointer;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+.span{
+ color: green;
+ text-decoration: line-through;
+ font-size: 10px;
+ 
+}
+span{
+color: green;
+}
+.item-name{
+  font-weight: bold;
+  text-align: start;
+  color: white;
+}
+.price p{
+  font-weight: bold;
+  color: white;
+}
+.img-details{
+  background-color: #212429;
+  color: white;
+  border-bottom-left-radius:15px ;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+.footer{
+  text-align: center;
+  margin-top: 50px;
+  background-color: #212429;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 20px;
+}
+.footer h1{
+  margin-bottom: 50px;
+  color: aqua;
+}
+.contact-icons{
+  display: flex;
+  justify-content: center;
+
+}
+.follow-icons{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+  .main-container{
+    background: black;
+    background-size: cover;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-name{
+    color: white;
+    font-size: 15px;
+  }
+  .icons{
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 20px;
+    height: 30px;
+  }
+  .nav-items{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 10px;
+  }
+  .All-Bags{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .All-Bags div h6{
+    margin-left: 0px;
+    font-size: 0px;
+    
+  }
+  .bag-icon{
+    width: 8vw;
+    height: 10vh;
+    color: white;
+    margin-left: 20px;
+  }
+  .bag-conatiner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+    gap: 20px; /* Gap between grid items */
+    background-color: black;
+  }
+  img{
+    width: 15vw;
+    height: 20vh;
+    margin: 3px;
+    margin: 10px;
+  }
+  .card{
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+  }
+  .item{
+    background-color: white;
+    border-radius: 17px;
+    color: white;
+    cursor: pointer;
+  }
+  .item:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+  .cart-icon{
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+  }
+  .cart-icon:hover{
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+  }
+  .price{
+    display: flex;
+    justify-content: space-between;
+  }
+  .span{
+   color: green;
+   text-decoration: line-through;
+   font-size: 10px;
+   
+  }
+  span{
+  color: green;
+  }
+  .item-name{
+    /* font-weight: bold; */
+    text-align: start;
+    color: white;
+    font-size: 12px;
+  }
+  .price p{
+    /* font-weight: bold; */
+    color: white;
+    font-size: 12px;
+  }
+  .img-details{
+    background-color: #212429;
+    color: white;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius: 15px;
+    /* padding: 10px; */
+    cursor: pointer;
+  }
+  .footer{
+    text-align: center;
+    margin-top: 50px;
+    background-color: #212429;
+    background-size: cover;
+    border-radius: 15px;
+    /* padding: 20px; */
+  }
+  .footer h1{
+    margin-bottom: 20px;
+    color: aqua;
+  }
+  .contact-icons{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .follow-icons{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
   }
 }
